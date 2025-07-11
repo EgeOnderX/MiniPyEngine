@@ -1,0 +1,34 @@
+# 🎮 MiniPyEngine 1.1.0-B
+
+**MiniPyEngine** is a lightweight, Python-based 3D game engine designed for learning, experimentation, and hobby game development. It supports OpenGL rendering, player movement, basic AI, and modular components.
+
+> 🔖 Current Version: **v1.1.0-beta**
+
+---
+
+## 🚀 What's New in v1.1.0-beta
+
+- 🧍 Jumping and crouching support added
+- 🖥️ 2K and 4K resolution support
+- ℹ️ "About" button is now fully functional
+- 🧩 Module verification system removed
+- 🏃‍♂️ Walking and running speeds made more realistic
+- 🐞 Several bugs fixed
+
+> ⚠️ Multiplayer support is currently **unstable**. A fully stable implementation is expected in the upcoming `v1.1.0-stable` release.
+
+---
+
+## 🛠 Requirements
+
+- Python 3.9+
+- [PyOpenGL](https://pypi.org/project/PyOpenGL/)
+- [pygame](https://pypi.org/project/pygame/)
+- numpy  
+- shortuuid  
+- psutil
+
+You can install them with:
+
+```bash
+pip install -r requirements.txt
