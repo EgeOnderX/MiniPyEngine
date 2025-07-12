@@ -9,12 +9,12 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 - Uses .obj and .mtl files for models and textures. Does not support .glb format.
 
 **Supports a wide range of resolutions, including:**
-- VGA (640×480 pixels)
-- SVGA (800×600 pixels)
-- HD (720p, 1280×720 pixels)
-- Full HD (1080p, 1920×1080 pixels)
-- 2K (QHD / WQHD, 2560×1440 pixels)
-- 4K (UHD, 3840×2160 pixels) 
+- VGA (`640×480 pixels`)
+- SVGA (`800×600 pixels`)
+- HD (`720p, 1280×720 pixels`)
+- Full HD (`1080p, 1920×1080 pixels`)
+- 2K (`QHD / WQHD, 2560×1440 pixels`)
+- 4K (`UHD, 3840×2160 pixels`) 
 
 ## Changes and Improvements in MiniPyEngine
 - Fixed numerous bugs from the original codebase  
@@ -30,19 +30,28 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 ---
 
 ## How to Play (with default Player.py)
-- Use W, A, S, D keys to move your character forward, left, backward, and right.
-- Hold Shift to run.
-- Press Space to jump.
-- Press Ctrl (or C) to crouch.
+- Use `W, A, S, D` keys to move your character forward, left, backward, and right.
+- Hold `Shift` to run.
+- Press `Space` to jump.
+- Press `Ctrl` (or `C`) to crouch.
 - Use the mouse to look around and aim.
 - Left-click to shoot or interact.
-- Press Esc to open the pause menu.
+- Press `Esc` to open the pause menu.
+
+---
+
+## How to Launch
+
+- Double-click on `main.py`.  
+- Then, make sure to check the **Settings**.  
+- If the program doesn't launch, open the `config` file with a text editor (e.g., Notepad) and verify the configuration.  
+- Finally, run `StartGame.py` to launch the game.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the `MIT` License.
 
 - Original engine: Alexander Freyr Lúðvíksson (2023)  
 - Modified and extended: MiniPyEngine by Ege Onder (2025)
