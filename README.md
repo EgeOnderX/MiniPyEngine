@@ -62,6 +62,18 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 
 ---
 
+## Technical Details
+
+MiniPyEngine uses modern OpenGL with custom GLSL shaders for advanced graphics beyond the fixed-function pipeline.  
+Shaders are loaded and compiled at runtime from the `shaders/` directory.
+To create your own game, simply modify `Player.py`, add your object files (`.obj`, `.mtl`, and textures), and define your objects inside the `objects` folder.
+
+
+
+
+
+---
+
 ## License
 
 This project is licensed under the `MIT` License.
