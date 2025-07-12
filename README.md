@@ -33,7 +33,7 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 - Use `W, A, S, D` keys to move your character forward, left, backward, and right.
 - Hold `Shift` to run.
 - Press `Space` to jump.
-- Press `Ctrl` (or `C`) to crouch.
+- Press `Ctrl` to crouch.
 - Use the mouse to look around and aim.
 - Left-click to shoot or interact.
 - Press `Esc` to open the pause menu.
