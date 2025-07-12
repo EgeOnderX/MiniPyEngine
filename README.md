@@ -43,9 +43,22 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 ## How to Launch
 
 - Double-click on `main.py`.  
-- Then, make sure to check the **Settings**.  
+- Then, make sure to check the **Settings button**.  
 - If the program doesn't launch, open the `config` file with a text editor (e.g., Notepad) and verify the configuration.  
 - Finally, run `StartGame.py` to launch the game.
+
+---
+
+## System Requirements
+
+### Minimum system requirements for running **MiniPyEngine** smoothly:
+- **OS:** Windows 10, Linux (Ubuntu 18.04 LTS or later recommended)
+- **Python:** 3.8  
+- **CPU:** Dual-core 2.0 GHz  
+- **RAM:** 80 MB (RAM needed only for the game, not total system RAM)
+- **GPU:** Integrated graphics with OpenGL 3.3 support  
+- **Storage:** 20 MB free space  
+- **Dependencies:** `pygame`, `PyOpenGL`, `numpy`, `shortuuid`
 
 ---
 
