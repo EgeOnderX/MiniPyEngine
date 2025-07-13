@@ -201,10 +201,31 @@ while running:
                     settings_active = True
                 elif buttons["About"].collidepoint(pos):
                     try:
-                        import tkinter.messagebox as mbox
+                        import tkinter as tk
+                        from tkinter import scrolledtext
+
                         with open("about.txt", "r", encoding="utf-8") as af:
                             content = af.read()
-                        mbox.showinfo("About", content)
+
+                        def show_about():
+                            about_root = tk.Tk()
+                            about_root.title("About MiniPyEngine")
+
+                            # Pencere boyutunu ayarla (örneğin 700x500)
+                            about_root.geometry("700x900")
+
+                            # Metni gösterecek kaydırılabilir alan
+                            text_box = scrolledtext.ScrolledText(about_root, wrap=tk.WORD, font=("Arial", 12))
+                            text_box.insert(tk.END, content)
+                            text_box.config(state=tk.DISABLED)
+                            text_box.pack(expand=True, fill='both')
+
+                            about_root.mainloop()
+
+                        show_about()
+
+                    except Exception as e:
+                        print("Could not load about.txt:", e)
                     except Exception as e:
                         print("Could not load about.txt:", e)
                 elif buttons["Exit"].collidepoint(pos):
