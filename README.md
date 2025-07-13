@@ -7,6 +7,7 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 
 ## Features:
 - Uses .obj and .mtl files for models and textures. Does not support .glb format.
+- It supports multiplayer.
 
 **Supports a wide range of resolutions, including:**
 - VGA (`640×480 pixels`)
@@ -21,11 +22,12 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 - Added full-screen mode by default  
 - Created a new, user-friendly main menu    
 - Fixed the broken free-look (mouse-look) system
+- ...
 
 ---
 
 ## Known bugs:
-- Multiplayer support is... let's say, enthusiastic but clumsy. It kinda works. **Sometimes**.
+- None.
   
 ---
 
