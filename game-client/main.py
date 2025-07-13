@@ -181,6 +181,10 @@ while running:
                 for label, res, rect in resolution_options:
                     if rect.collidepoint(pos):
                         screen_width, screen_height = res
+                        try:
+                            pygame.mixer.Sound("sounds/buttonmenu.mp3").play()  # SES ÇAL
+                        except:
+                            pass
                 if sens_rect.collidepoint(pos):
                     if sensitivity >= 100:
                         sensitivity = 0
@@ -189,17 +193,37 @@ while running:
                 if back_rect.collidepoint(pos):
                     save_config()
                     settings_active = False
+                    try:
+                        pygame.mixer.Sound("sounds/buttonmenu.mp3").play()  # SES ÇAL
+                    except:
+                        pass
             else:
                 if buttons["Start Server"].collidepoint(pos):
+                    try:
+                        pygame.mixer.Sound("sounds/buttonmenu.mp3").play()
+                    except:
+                        pass
                     parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
                     server_path = os.path.join(parent_dir, "game-server", "Server.py")
                     subprocess.Popen([sys.executable, server_path])
 
                 elif buttons["Start Game"].collidepoint(pos):
                     run_game()
+                    try:
+                        pygame.mixer.Sound("sounds/buttonmenu.mp3").play()
+                    except:
+                        pass
                 elif buttons["Settings"].collidepoint(pos):
                     settings_active = True
+                    try:
+                        pygame.mixer.Sound("sounds/buttonmenu.mp3").play()
+                    except:
+                        pass
                 elif buttons["About"].collidepoint(pos):
+                    try:
+                        pygame.mixer.Sound("sounds/buttonmenu.mp3").play()
+                    except:
+                        pass
                     try:
                         import tkinter as tk
                         from tkinter import scrolledtext
@@ -210,22 +234,15 @@ while running:
                         def show_about():
                             about_root = tk.Tk()
                             about_root.title("About MiniPyEngine")
-
-                            # Pencere boyutunu ayarla (örneğin 700x500)
                             about_root.geometry("700x900")
-
-                            # Metni gösterecek kaydırılabilir alan
                             text_box = scrolledtext.ScrolledText(about_root, wrap=tk.WORD, font=("Arial", 12))
                             text_box.insert(tk.END, content)
                             text_box.config(state=tk.DISABLED)
                             text_box.pack(expand=True, fill='both')
-
                             about_root.mainloop()
 
                         show_about()
 
-                    except Exception as e:
-                        print("Could not load about.txt:", e)
                     except Exception as e:
                         print("Could not load about.txt:", e)
                 elif buttons["Exit"].collidepoint(pos):
