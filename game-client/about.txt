@@ -32,13 +32,6 @@ originally created by Alexander Freyr Lúðvíksson in 2023.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🐞 Known Bugs:
-
-🌐 Multiplayer support is... let's say, enthusiastic but clumsy.  
-It kinda works. Sometimes. 😅
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎮 How to Play (with default Player.py):
 
 🕹️  W, A, S, D   → Move forward, left, backward, and right  
