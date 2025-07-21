@@ -60,7 +60,7 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 - **RAM:** 80 MB (RAM needed only for the game, not total system RAM)
 - **GPU:** Integrated graphics with OpenGL 3.3 support  
 - **Storage:** 20 MB free space  
-- **Dependencies:** `pygame`, `PyOpenGL`, `numpy`, `shortuuid`
+- **Dependencies:** `pygame`, `PyOpenGL`, `numpy`, `shortuuid`, `psutil`
 
 ---
 
