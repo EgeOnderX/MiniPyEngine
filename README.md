@@ -1,6 +1,6 @@
 # MiniPyEngine
 # New version : 1.0.1-S https://github.com/EgeOnderX/MiniPyEngine/releases/tag/v1.0.1
-## 🌐 中文自述文件: [简体中文](readme.cn.md)  
+## 🌐 中文自述文件: [简体中文](readme.cn.md)  系统会自动将您重定向到 1.0.1-S 的 README 文件 (The system will automatically redirect you to the README file of version 1.0.1-S.)。
 **MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by Alexander Freyr Lúðvíksson in 2023.
 
 This version was developed and extended by **Ege** in 2025 under the MIT License.
