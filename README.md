@@ -71,8 +71,10 @@ MiniPyEngine uses modern OpenGL with custom GLSL shaders for advanced graphics b
 Shaders are loaded and compiled at runtime from the `shaders/` directory.
 To create your own game, simply modify `Player.py`, add your object files (`.obj`, `.mtl`, and textures), and define your objects inside the `objects` folder.
 
+---
 
-
+## Contributors
+### README translated into Chinese by: @OwnderDuck
 
 
 ---
