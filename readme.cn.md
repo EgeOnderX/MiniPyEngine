@@ -1,7 +1,7 @@
 # MiniPyEngine 1.0.1-S  
 ---
 
-## 🌐 选择语言: [English](README.md) | [🇨🇳 中文](README.cn.md)
+## 🌐 选择语言: [English](README.md)
 
 **MiniPyEngine** 是对 Alexander Freyr Lúðvíksson 于 2023 年创建的游戏引擎进行了深度改进和重构的版本。
 
