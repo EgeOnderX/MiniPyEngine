@@ -1,4 +1,6 @@
 # MiniPyEngine
+English | [简体中文](README-zh-CN.md)
+
 **MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by Alexander Freyr Lúðvíksson in 2023.
 
 This version was developed and extended by **Ege** in 2025 under the MIT License.
