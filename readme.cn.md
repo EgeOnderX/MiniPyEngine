@@ -1,5 +1,4 @@
 # MiniPyEngine
-## 🌐 请选择语言 简体中文 | [English](README.md)
 **MiniPyEngine** 是对 Alexander Freyr Lúðvíksson 于 2023 年创作的原始游戏引擎进行了大幅改进和重构后的版本。
 
 该版本由 **Ege** 于 2025 年在 MIT 许可证下开发和扩展。
