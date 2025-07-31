@@ -1,6 +1,7 @@
 # MiniPyEngine
-English | [简体中文](README-zh-CN.md)
 
+=======
+## 🌐 Select Language English | [简体中文](readme.cn.md)
 **MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by Alexander Freyr Lúðvíksson in 2023.
 
 This version was developed and extended by **Ege** in 2025 under the MIT License.
@@ -72,8 +73,10 @@ MiniPyEngine uses modern OpenGL with custom GLSL shaders for advanced graphics b
 Shaders are loaded and compiled at runtime from the `shaders/` directory.
 To create your own game, simply modify `Player.py`, add your object files (`.obj`, `.mtl`, and textures), and define your objects inside the `objects` folder.
 
+---
 
-
+## Contributors
+### README translated into Chinese by: @OwnderDuck
 
 
 ---
