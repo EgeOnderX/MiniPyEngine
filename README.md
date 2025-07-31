@@ -1,106 +1,144 @@
-# MiniPyEngine
-**MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by Alexander Freyr Lúðvíksson in 2023.
+# MiniPyEngine 1.0.1-S
+
+**MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by **Alexander Freyr Lúðvíksson** in 2023.
 
 This version was developed and extended by **Ege** in 2025 under the MIT License.
 
 ---
 
-## Features:
-- Uses .obj and .mtl files for models and textures. Does not support .glb format.
-- It supports multiplayer.
+## Features
 
-**Supports a wide range of resolutions, including:**
-- VGA (`640×480 pixels`)
-- SVGA (`800×600 pixels`)
-- HD (`720p, 1280×720 pixels`)
-- Full HD (`1080p, 1920×1080 pixels`)
-- 2K (`QHD / WQHD, 2560×1440 pixels`)
-- 4K (`UHD, 3840×2160 pixels`) 
-
-## Changes and Improvements in MiniPyEngine
-- Fixed numerous bugs from the original codebase  
-- Added full-screen mode by default  
-- Created a new, user-friendly main menu    
-- Fixed the broken free-look (mouse-look) system
-- ...
+- Uses `.obj` and `.mtl` files for models and textures. (Does **not** support `.glb` format.)
+- Supports a wide range of resolutions:
+  - HD (`1280×720`)
+  - Full HD (`1920×1080`)
+  - 2K / QHD (`2560×1440`)
+  - 4K / UHD (`3840×2160`)
+  - 8K (`7680×4320`)
+  - 16K (`15360×8640`) 
 
 ---
 
-## Known bugs:
-- None.
-  
+## What's New in MiniPyEngine 1.0.1-S
+
+- Added **Game Maker App** Button, **NOT** the app 
+- Multiplayer removed  (But still it needs shortuuid)
+- Added support for **8K**  for fun, added **16K** resolution!
+- Fixed crouch-jump bug  
+- Various bug fixes and internal improvements  
+- VGA and SVGA resolution support removed for stability
+- Added console menu.
+- Added modulechk system.
+
 ---
 
-## How to Play (with default Player.py)
-- Use `W, A, S, D` keys to move your character forward, left, backward, and right.
-- Hold `Shift` to run.
-- Press `Space` to jump.
-- Press `Ctrl` to crouch.
-- Use the mouse to look around and aim.
-- Left-click to shoot or interact.
-- Press `Esc` to open the pause menu.
+## Known Bugs
+
+- None reported.
+
+---
+
+## Controls (default `Player.py`)
+
+- Move: `W`, `A`, `S`, `D`  
+- Run: Hold `Shift`  
+- Jump: `Space`  
+- Crouch: `Ctrl`  
+- Look around: Move the mouse  
+- Shoot / Interact: Left-click  
+- Pause menu: `Esc`
+- Press f3 to open console.
 
 ---
 
 ## How to Launch
 
-- Double-click on `main.py`.  
-- Then, make sure to check the **Settings button**.  
-- If the program doesn't launch, open the `config` file with a text editor (e.g., Notepad) and verify the configuration.  
-- Finally, run `StartGame.py` to launch the game.
+1. Double-click `main.py`.
+2. In the menu, click the **Settings** button to configure resolution and other options.
+3. If the game doesn't launch:
+   - Open the `config` file with a text editor (e.g., Notepad).
+   - Verify the configuration settings.
+4. Finally, run `StartGame.py` to start the game.
 
 ---
 
 ## System Requirements
 
-### Minimum system requirements for running **MiniPyEngine** smoothly:
-- **OS:** Windows 10, Linux (Ubuntu 18.04 LTS or later recommended)
-- **Python:** 3.8  
+### Minimum:
+
+- **OS:** Windows 10 / Linux (Ubuntu 18.04+)  
+- **Python:** 3.8+  
 - **CPU:** Dual-core 2.0 GHz  
-- **RAM:** 80 MB (RAM needed only for the game, not total system RAM)
+- **RAM:** 80 MB (game usage only)  
 - **GPU:** Integrated graphics with OpenGL 3.3 support  
 - **Storage:** 20 MB free space  
-- **Dependencies:** `pygame`, `PyOpenGL`, `numpy`, `shortuuid`, `psutil`
+- **Dependencies:**  
+  `pygame`, `PyOpenGL`, `numpy`, `***shortuuid***`, `psutil`
+
+> NOTE: You might think shortuuid is only needed when there is multiplayer, but since we gradually removed it step by step, it is still necessary to prevent corruption.
 
 ---
 
-## Technical Details
+## Technical Overview
 
-MiniPyEngine uses modern OpenGL with custom GLSL shaders for advanced graphics beyond the fixed-function pipeline.  
-Shaders are loaded and compiled at runtime from the `shaders/` directory.
-To create your own game, simply modify `Player.py`, add your object files (`.obj`, `.mtl`, and textures), and define your objects inside the `objects` folder.
+MiniPyEngine uses **modern OpenGL** with custom GLSL shaders for advanced graphics, going beyond the fixed-function pipeline.  
+Shaders are compiled at runtime from the `shaders/` directory.
 
+To create your own game:
+
+- Modify `Player.py`  
+- Add `.obj`, `.mtl`, and texture files  
+- Register your objects in the `objects/` folder  
+- You can create your own map by editing the level1.py file.
+> NOTE: For a super silly map filled with boxes, replace the level1 file in the maps folder with the original level1
+### The sound system contains only sample sounds!
 ---
 
-## Contributors
-### README translated into Chinese by: @OwnderDuck
+## Console Commands
 
-
----
+- Type 'god' to enable God Mode (health set to 9999).
+- Type 'noclip' to pass through walls.
+- Type 'nocrouch' to disable/enable crouching.
+- Type 'nojump' to disable/enable jumping.
+- Type 'exit' to close the console.
 
 ## License
 
-This project is licensed under the `MIT` License.
+MIT License
 
-- Original engine: Alexander Freyr Lúðvíksson (2023)  
-- Modified and extended: MiniPyEngine by Ege Onder (2025)
+Original Copyright (c) 2023 Alexander Freyr Lúðvíksson  
+Modified into MiniPyEngine by Ege, 2025  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
 ---
 
-## Future Versions
+## Planned Features for Future Versions
 
-MiniPyEngine is actively being developed.  
-New versions with additional features, performance improvements, and tools are planned for future releases. (1.1.0-S (stable))
-Planned features:
+- Better performance and optimizations  
+- Enhanced graphics/rendering pipeline  
+- Additional platform support  
+- Complete map file system  
+- NPC system  
+- Expanded documentation and tutorials  
 
-- Optimization and performance upgrades  
-- Improved graphics/rendering pipeline  
-- Support for additional platforms and resolutions  
-- Extended documentation and learning resources
-- Sound support
-- Much better multiplayer support
-- Map file loader support
-- NPCs
 ---
 
-If you downloaded or used this project, thank you for trying out MiniPyEngine!
+If you downloaded or used this project, thank you for trying out **MiniPyEngine**!
