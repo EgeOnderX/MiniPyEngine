@@ -146,6 +146,10 @@ SOFTWARE.
 
 ---
 
+## Contributors:
+- MiniPyEngine Chinese Version by @OwnderDuck
+
+---
 ## Planned Features for Future Versions
 
 - Better performance and optimizations  
@@ -154,6 +158,13 @@ SOFTWARE.
 - Complete map file system  
 - NPC system  
 - Expanded documentation and tutorials  
+
+---
+
+## Other languages
+- MiniPyEngine English Version by @EGEONDERX
+- MiniPyEngine Turkish Version by @EGEONDERX
+- MiniPyEngine Deutsch Version by @EGEONDERX
 
 ---
 
