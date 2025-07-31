@@ -147,7 +147,7 @@ SOFTWARE.
 ---
 
 ## Contributors:
-- MiniPyEngine Chinese Version by @OwnderDuck
+- MiniPyEngine Chinese Version by @OwnderDuck [MiniPyEngine Chinese Edition](https://github.com/EgeOnderX/MiniPyEngine-Chinese-Edition)
 
 ---
 ## Planned Features for Future Versions
@@ -162,9 +162,9 @@ SOFTWARE.
 ---
 
 ## Other languages
+- MiniPyEngine Turkish Version by @EGEONDERX [MiniPyEngine Turkish Edition](https://github.com/EgeOnderX/MiniPyEngine-Turkce-Turkish-Edition)
+- MiniPyEngine Deutsch Version by @EGEONDERX [MiniPyEngine German Edition](https://github.com/EgeOnderX/MiniPyEngine-Deutsch-German-Edition)
 - MiniPyEngine English Version by @EGEONDERX
-- MiniPyEngine Turkish Version by @EGEONDERX
-- MiniPyEngine Deutsch Version by @EGEONDERX
 
 ---
 
