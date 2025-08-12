@@ -1,7 +1,5 @@
 [Main README](../README.md)
 
-###### Du siehst dir die deutsche Version an.
-
 ---
 
 # MiniPyEngine
