@@ -1,4 +1,4 @@
-# MiniPyEngine 1.0.1-S
+# MiniPyEngine 1.0.1-S language pach
 
 **MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by **Alexander Freyr Lúðvíksson** in 2023.
 
@@ -21,13 +21,14 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
 
 ## What's New in MiniPyEngine 1.0.1-S
 
-- Added **Game Maker App** Button, **NOT** the app 
+- Added **Game Maker App** Button, **NOT** the app ( Comes in v1.0.3 )
 - Multiplayer removed  (But still it needs shortuuid)
 - Added support for **8K**  for fun, added **16K** resolution!
 - Fixed crouch-jump bug  
 - Various bug fixes and internal improvements  
 - VGA and SVGA resolution support removed for stability
 - Added console menu.
+- Added modulechk system.
 
 ---
 
@@ -58,6 +59,22 @@ This version was developed and extended by **Ege** in 2025 under the MIT License
    - Open the `config` file with a text editor (e.g., Notepad).
    - Verify the configuration settings.
 4. Finally, run `StartGame.py` to start the game.
+
+---
+
+##   Screenshots:
+
+## Main Menu:  
+
+<img width="1919" height="929" alt="main" src="https://github.com/user-attachments/assets/8948a77d-fa41-483a-8725-4326b7e846bf" />
+
+## Console Menu:   
+
+<img width="845" height="582" alt="console" src="https://github.com/user-attachments/assets/f1d4bf1a-04ab-419e-8f93-15a3238a2c33" />
+
+## Module Verification System:  
+
+<img width="661" height="252" alt="modulechk" src="https://github.com/user-attachments/assets/a1885e07-20fa-4224-b8fa-ffa2f21b89ec" />
 
 ---
 
@@ -129,6 +146,10 @@ SOFTWARE.
 
 ---
 
+## Contributors:
+- @OwnderDuck
+
+---
 ## Planned Features for Future Versions
 
 - Better performance and optimizations  
