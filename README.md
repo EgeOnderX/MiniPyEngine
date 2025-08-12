@@ -1,4 +1,4 @@
-[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
+[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe(Eski sürüm)](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch(Alte Version)](Docs/README_DE.md)
 ###### There is main README,English ver.
 ###### Translations may not be up to date.
 ---
