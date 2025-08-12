@@ -1,7 +1,7 @@
 [Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
 ---
 
-# MiniPyEngine 1.0.1-S
+# MiniPyEngine 1.0.1-S language pach
 
 **MiniPyEngine** is a heavily improved and restructured version of a game engine originally created by **Alexander Freyr Lúðvíksson** in 2023.
 
