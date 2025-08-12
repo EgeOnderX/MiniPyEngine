@@ -1,6 +1,6 @@
-[Main README](README.md) || [English](Docs/README_EN.md) || [简体中文](Docs/README_zh-CN.md)
+[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
 ###### There is main README,English ver.
-
+###### Translations may not be up to date.
 ---
 
 # MiniPyEngine 1.0.1-S
