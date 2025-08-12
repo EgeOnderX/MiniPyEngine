@@ -1,5 +1,5 @@
-[Main README](README.md)
-###### There is English ver.
+[Main README](../README.md)
+
 
 ---
 
