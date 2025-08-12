@@ -1,5 +1,5 @@
-[Main README](README.md) || [English](Docs/README_EN.md) || [简体中文](Docs/README_zh-CN.md)
-###### There is main README,English ver.
+[Main README](README.md)
+###### There is English ver.
 
 ---
 
@@ -163,13 +163,6 @@ SOFTWARE.
 - Complete map file system  
 - NPC system  
 - Expanded documentation and tutorials  
-
----
-
-## Other languages
-- MiniPyEngine Turkish Version by @EGEONDERX [MiniPyEngine Turkish Edition](https://github.com/EgeOnderX/MiniPyEngine-Turkce-Turkish-Edition)
-- MiniPyEngine Deutsch Version by @EGEONDERX [MiniPyEngine German Edition](https://github.com/EgeOnderX/MiniPyEngine-Deutsch-German-Edition)
-- MiniPyEngine English Version by @EGEONDERX
 
 ---
 
