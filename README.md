@@ -1,6 +1,4 @@
-[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe(Eski sürüm)](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch(Alte Version)](Docs/README_DE.md)
-###### There is main README,English ver.
-###### Translations may not be up to date.
+[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
 ---
 
 # MiniPyEngine 1.0.1-S
@@ -152,7 +150,7 @@ SOFTWARE.
 ---
 
 ## Contributors:
-- MiniPyEngine Chinese Version by @OwnderDuck [MiniPyEngine Chinese Edition](https://github.com/EgeOnderX/MiniPyEngine-Chinese-Edition)
+- @OwnderDuck
 
 ---
 ## Planned Features for Future Versions
@@ -163,13 +161,6 @@ SOFTWARE.
 - Complete map file system  
 - NPC system  
 - Expanded documentation and tutorials  
-
----
-
-## Other languages
-- MiniPyEngine Turkish Version by @EGEONDERX [MiniPyEngine Turkish Edition](https://github.com/EgeOnderX/MiniPyEngine-Turkce-Turkish-Edition)
-- MiniPyEngine Deutsch Version by @EGEONDERX [MiniPyEngine German Edition](https://github.com/EgeOnderX/MiniPyEngine-Deutsch-German-Edition)
-- MiniPyEngine English Version by @EGEONDERX
 
 ---
 
