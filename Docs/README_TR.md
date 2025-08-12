@@ -1,139 +1,171 @@
 [Main README](README.md)
-###### Türkçe sürümünü görüntülüyorsunuz.
----
+# MiniPyEngine 1.0.1-S Dil Paketi  
 
-# 🎮 MiniPyEngine
-# Bu sürümün desteği yakın zamanda kalkacaktır tüm dillerin tek bir depoda  (minipyengine) deposunda birleştirilmesli planlanmaktadır!
-**MiniPyEngine**, ilk olarak Alexander Freyr Lúðvíksson tarafından 2023'te geliştirilen bir oyun motorunun yeniden yapılandırılmış ve genişletilmiş halidir.  
-Bu versiyon **Ege** tarafından 2025 yılında MIT Lisansı altında geliştirilmiştir.
+**MiniPyEngine**, 2023 yılında **Alexander Freyr Lúðvíksson** tarafından oluşturulan bir oyun motorunun, büyük ölçüde geliştirilmiş ve yeniden yapılandırılmış versiyonudur.  
 
-> ⚠️ **UYARI**  
-> Bu depo: https://github.com/mitoschan/MiniPyEngine-Turkce-Turkish-Edition , orijinal MiniPyEngine projesinin izinsiz bir kopyasıdır.  
-> ✅ Gerçek ve tek resmi proje burada yer almaktadır:  
-> [https://github.com/EgeOnderX/MiniPyEngine](https://github.com/EgeOnderX/MiniPyEngine)  
->
-> ⚖️ Bu repo hakkında GitHub'a resmi **DMCA bildirimi yapılmıştır.**  
-> Telif hakkı ihlali nedeniyle işlem süreci başlatılmıştır.
-> Lütfen orijinal projeyi kullanın, sahte sürümlerden uzak durun.
+Bu sürüm, 2025 yılında **Ege** tarafından MIT Lisansı altında geliştirilmiş ve genişletilmiştir.  
 
 ---
 
-> ⚠️ **WARNING: Copyright Infringement**  
-> This repository: https://github.com/mitoschan/MiniPyEngine-Turkce-Turkish-Edition  is an **unauthorized copy** of the official MiniPyEngine project.  
-> ✅ The only legitimate version is hosted at:  
-> [https://github.com/EgeOnderX/MiniPyEngine](https://github.com/EgeOnderX/MiniPyEngine)  
->
-> ⚖️ A **DMCA takedown notice has been filed** with GitHub for copyright violation.  
-> Legal review is in progress. Use only the original project, not unauthorized copies.
+## Özellikler  
+
+- Modeller ve dokular için `.obj` ve `.mtl` dosyalarını kullanır. (`.glb` formatını **desteklemez**.)  
+- Geniş çözünürlük desteği:  
+  - HD (`1280×720`)  
+  - Full HD (`1920×1080`)  
+  - 2K / QHD (`2560×1440`)  
+  - 4K / UHD (`3840×2160`)  
+  - 8K (`7680×4320`)  
+  - 16K (`15360×8640`)  
 
 ---
 
-## 🚀 Özellikler
+## MiniPyEngine 1.0.1-S’teki Yenilikler  
 
-- `.obj` ve `.mtl` dosya formatlarını kullanır. `.glb` desteği **yoktur**.  
-- Çok oyunculu mod **desteklenmektedir**.
-
-**Desteklenen çözünürlükler:**
-- VGA (640×480)
-- SVGA (800×600)
-- HD (1280×720)
-- Full HD (1920×1080)
-- 2K QHD (2560×1440)
-- 4K UHD (3840×2160)
+- **Game Maker App** düğmesi eklendi, uygulamanın kendisi eklenmedi (**v1.0.3**’te gelecek)  
+- Çok oyunculu (multiplayer) kaldırıldı (**ancak hâlâ shortuuid gerektiriyor**)  
+- **8K** desteği eklendi, ayrıca eğlence için **16K** çözünürlük desteği eklendi  
+- Eğilerek zıplama hatası düzeltildi  
+- Çeşitli hata düzeltmeleri ve içsel iyileştirmeler yapıldı  
+- Stabilite için VGA ve SVGA çözünürlük desteği kaldırıldı  
+- Konsol menüsü eklendi  
+- **modulechk** sistemi eklendi  
 
 ---
 
-## 🛠️ Değişiklikler ve Geliştirmeler
+## Bilinen Hatalar  
 
-- Orijinal kod tabanındaki hatalar düzeltildi  
-- Varsayılan olarak tam ekran modu eklendi  
-- Yeni ve kullanıcı dostu ana menü oluşturuldu  
-- Serbest bakış (mouse-look) sistemi düzeltildi  
-- ...
+- Bildirilmiş bir hata yok.  
 
 ---
 
-## 🐞 Bilinen Hatalar
+## Kontroller (varsayılan `Player.py`)  
 
-- Şu anda bilinen herhangi bir hata yok.
-
----
-
-## 🎮 Oynanış (Varsayılan Player.py ile)
-
-- **W, A, S, D:** Hareket  
-- **Shift:** Koş  
-- **Space:** Zıpla  
-- **Ctrl:** Eğil  
-- **Fare:** Bak ve nişan al  
-- **Sol Tıklama:** Ateş et veya etkileşim kur  
-- **Esc:** Duraklatma menüsünü aç
+- Hareket: `W`, `A`, `S`, `D`  
+- Koşma: `Shift` basılı tut  
+- Zıplama: `Space`  
+- Eğilme: `Ctrl`  
+- Etrafa bakma: Fareyi hareket ettir  
+- Ateş etme / Etkileşim: Sol tık  
+- Duraklatma menüsü: `Esc`  
+- `F3` tuşuna basarak konsolu aç  
 
 ---
 
-## ⚙️ Başlatma Adımları
+## Çalıştırma Talimatı  
 
-1. `main.py` dosyasını çift tıklayın  
-2. Ayarlar butonunu kontrol edin  
-3. Çalışmazsa `config` dosyasını bir metin düzenleyiciyle açın  
-4. Ardından `StartGame.py` dosyasını çalıştırarak başlatın
+1. `main.py` dosyasına çift tıkla.  
+2. Menüde **Ayarlar** düğmesine tıklayarak çözünürlük ve diğer ayarları yap.  
+3. Oyun başlamazsa:  
+   - `config` dosyasını bir metin düzenleyici (ör. Not Defteri) ile aç.  
+   - Ayarların doğru olduğundan emin ol.  
+4. Son olarak, oyunu başlatmak için `StartGame.py` dosyasını çalıştır.  
 
 ---
 
-## 💻 Sistem Gereksinimleri
+## Ekran Görüntüleri  
 
-**MiniPyEngine** için minimum sistem gereksinimleri:
+### Ana Menü:  
 
-- **İşletim Sistemi:** Windows 10, Linux (Ubuntu 18.04+ önerilir)  
-- **Python:** 3.8  
-- **CPU:** Çift çekirdek 2.0 GHz  
-- **RAM:** 80 MB (sadece oyun için)  
-- **GPU:** OpenGL 3.3 destekli entegre grafik  
+<img width="1919" height="929" alt="main" src="https://github.com/user-attachments/assets/8948a77d-fa41-483a-8725-4326b7e846bf" />  
+
+### Konsol Menüsü:  
+
+<img width="845" height="582" alt="console" src="https://github.com/user-attachments/assets/f1d4bf1a-04ab-419e-8f93-15a3238a2c33" />  
+
+### Modül Doğrulama Sistemi:  
+
+<img width="661" height="252" alt="modulechk" src="https://github.com/user-attachments/assets/a1885e07-20fa-4224-b8fa-ffa2f21b89ec" />  
+
+---
+
+## Sistem Gereksinimleri  
+
+### Minimum:  
+
+- **İşletim Sistemi:** Windows 10 / Linux (Ubuntu 18.04+)  
+- **Python:** 3.8+  
+- **İşlemci:** Çift çekirdekli 2.0 GHz  
+- **RAM:** 80 MB (oyun içi kullanım)  
+- **Ekran Kartı:** OpenGL 3.3 destekli dahili grafik  
 - **Depolama:** 20 MB boş alan  
-- **Bağımlılıklar:** `pygame`, `PyOpenGL`, `numpy`, `shortuuid`, `psutil`
+- **Bağımlılıklar:**  
+  `pygame`, `PyOpenGL`, `numpy`, `***shortuuid***`, `psutil`  
+
+> NOT: shortuuid yalnızca çok oyunculu için gerekli sanabilirsiniz, ancak kademeli olarak kaldırıldığı için hâlâ bozulmaları önlemek amacıyla kullanılmaktadır.  
 
 ---
 
-## 🧪 Teknik Detaylar
+## Teknik Özellikler  
 
-- Modern OpenGL + özel GLSL shader'ları kullanır  
-- Shader'lar `shaders/` klasöründen yüklenip çalıştırma sırasında derlenir  
-- Kendi oyununuzu oluşturmak için:  
-  - `Player.py` dosyasını düzenleyin  
-  - `.obj`, `.mtl`, ve doku dosyalarınızı ekleyin  
-  - Nesneleri `objects` klasörü altında tanımlayın
+MiniPyEngine, gelişmiş grafikler için **modern OpenGL** ve özel GLSL shader’lar kullanır, sabit işlevli grafik hattının ötesine geçer.  
+Shader’lar çalışma zamanında `shaders/` klasöründen derlenir.  
 
----
+Kendi oyununuzu oluşturmak için:  
+- `Player.py` dosyasını düzenleyin  
+- `.obj`, `.mtl` ve doku dosyaları ekleyin  
+- Nesnelerinizi `objects/` klasörüne kaydedin  
+- `level1.py` dosyasını düzenleyerek kendi haritanızı yapabilirsiniz  
 
-## 🤝 Katkıda Bulunanlar
+> NOT: Sadece kutularla dolu, komik bir harita istiyorsanız, `maps` klasöründeki level1 dosyasını orijinal level1 ile değiştirin  
 
-- README dosyasını Çince’ye çeviren: @OwnderDuck
-
----
-
-## 📄 Lisans
-
-MIT Lisansı altında yayınlanmıştır.  
-- Orijinal geliştirici: Alexander Freyr Lúðvíksson (2023)  
-- Geliştirici: Ege Onder (2025)
+### Ses Sistemi:  
+Sadece örnek sesler içerir.  
 
 ---
 
-## 🌟 Gelecek Sürümler
+## Konsol Komutları  
 
-Geliştirme **aktif** olarak sürmektedir.  
-Planlanan özellikler (1.1.0-S kararlı sürüm):
-
-- Daha yüksek performans ve optimizasyon  
-- Gelişmiş grafik / render yapısı  
-- Ek çözünürlük ve platform desteği  
-- Detaylı belgeler ve eğitim kaynakları  
-- Ses sistemi desteği  
-- Gelişmiş çok oyunculu altyapı  
-- Harita dosyası yükleyici  
-- NPC desteği  
+- `god` → Tanrı Modunu açar (can değeri 9999 olur).  
+- `noclip` → Duvarlardan geçmenizi sağlar.  
+- `nocrouch` → Eğilme özelliğini kapat/aç.  
+- `nojump` → Zıplama özelliğini kapat/aç.  
+- `exit` → Konsolu kapatır.  
 
 ---
 
-🎉 MiniPyEngine’i denediğiniz için teşekkürler!
+## Lisans  
 
+MIT License
+
+Original Copyright (c) 2023 Alexander Freyr Lúðvíksson  
+Modified into MiniPyEngine by Ege, 2025  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Katkıda Bulunanlar  
+
+- @OwnderDuck  
+
+---
+
+## Gelecek Sürümler İçin Planlanan Özellikler  
+
+- Daha iyi performans ve optimizasyon  
+- Geliştirilmiş grafik/çizim sistemi  
+- Ek platform desteği  
+- Tam harita dosya sistemi  
+- NPC sistemi  
+- Genişletilmiş dokümantasyon ve eğitimler  
+
+---
+
+Eğer bu projeyi indirdiyseniz veya kullandıysanız, **MiniPyEngine**’i denediğiniz için teşekkürler!
