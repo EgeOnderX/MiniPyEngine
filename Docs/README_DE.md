@@ -1,4 +1,5 @@
-[Main README](Docs/README.md)
+[Main README](../README.md)
+
 ###### Du siehst dir die deutsche Version an.
 
 ---
