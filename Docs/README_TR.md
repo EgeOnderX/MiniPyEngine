@@ -1,4 +1,5 @@
-[Main README](README.md)
+[Main README](../README.md)
+
 # MiniPyEngine 1.0.1-S Dil Paketi  
 
 **MiniPyEngine**, 2023 yılında **Alexander Freyr Lúðvíksson** tarafından oluşturulan bir oyun motorunun, büyük ölçüde geliştirilmiş ve yeniden yapılandırılmış versiyonudur.  
