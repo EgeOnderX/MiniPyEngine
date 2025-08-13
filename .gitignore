@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.exe
+*.zip
+*.mp4
+*.png
+*.jpg
+*.dll
+node_modules/
