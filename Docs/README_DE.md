@@ -3,10 +3,6 @@
 
 # MiniPyEngine 1.0.1-S Sprachpaket
 
-**MiniPyEngine** ist eine stark verbesserte und neu strukturierte Version einer Spiel-Engine, die ursprünglich 2023 von **Alexander Freyr Lúðvíksson** erstellt wurde.
-
-Diese Version wurde 2025 von **Ege** unter der MIT-Lizenz entwickelt und erweitert.
-
 ---
 
 ## Funktionen
