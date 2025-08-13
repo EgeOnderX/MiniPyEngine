@@ -1,7 +1,7 @@
 [Main README](../README.md)
 ---
 
-# MiniPyEngine 1.0.1-S
+# MiniPyEngine 1.0.1-S 语言补丁
 
 **MiniPyEngine** 是对最初由 **Alexander Freyr Lúðvíksson** 于 2023 年创建的游戏引擎进行重大改进和重构后的版本。
 
