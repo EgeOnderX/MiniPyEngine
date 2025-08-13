@@ -122,7 +122,8 @@ Sadece örnek sesler içerir.
 - `noclip` → Duvarlardan geçmenizi sağlar.  
 - `nocrouch` → Eğilme özelliğini kapat/aç.  
 - `nojump` → Zıplama özelliğini kapat/aç.  
-- `exit` → Konsolu kapatır.  
+- `exit` → Konsolu kapatır.
+### `console("*konsolkomutu*")` yazarsanız, *konsolkomutu* uygulanacaktır.
 
 ---
 
