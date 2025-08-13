@@ -120,6 +120,8 @@ To create your own game:
 - Type 'nocrouch' to disable/enable crouching.
 - Type 'nojump' to disable/enable jumping.
 - Type 'exit' to close the console.
+### ProTip: If you go into the config file and write `console("*consolecommand*")` there, *consolecommand* will be executed.
+
 
 ## License
 
