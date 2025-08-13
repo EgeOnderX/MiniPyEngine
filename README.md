@@ -1,4 +1,4 @@
-[Main README](README.md) || [English](Docs/README_EN.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
+[Main README](README.md) || [Türkçe](Docs/README_TR.md) || [简体中文](Docs/README_zh-CN.md) || [Deutsch](Docs/README_DE.md)
 ---
 
 # MiniPyEngine 1.0.1-S language pach
