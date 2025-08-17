@@ -164,3 +164,5 @@ SOFTWARE.
 ---
 
 If you downloaded or used this project, thank you for trying out **MiniPyEngine**!
+
+# ...AND If you like MiniPyEngine, don’t forget to give it a ⭐!
