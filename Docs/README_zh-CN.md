@@ -3,6 +3,7 @@
 
 # MiniPyEngine 1.0.1-S （多语言）
 
+
 ---
 
 ## 特性
@@ -32,7 +33,9 @@
 ---
 
 ## 已知问题
+
 - 无报告
+  
 ---
 
 ## 控制 (默认 `Player.py`)
@@ -146,7 +149,7 @@ SOFTWARE.
 ---
 
 ## 贡献者：
-- MiniPyEngine 中文文档 @OwnderDuck
+- @OwnderDuck
 
 ---
 ## 未来计划
@@ -161,3 +164,5 @@ SOFTWARE.
 ---
 
 如果你下载了 **MiniPyEngine**，感谢你的试用！
+
+# ...如果你喜欢 MiniPyEngine，给我们 STAR !
