@@ -36,8 +36,8 @@ button_texts = {
         "btn_sens": "Sensitivity"
     },
     "cn": {
-        "btn_gamemaker": "游戏制作",
-        "btn_startgame": "开始游戏",
+        "btn_gamemaker": "游戏制作器",
+        "btn_startgame": "开始",
         "btn_settings": "设置",
         "btn_about": "关于",
         "btn_exit": "退出",
@@ -393,3 +393,4 @@ while running:
                     running = False
 
 pygame.quit()
+
