@@ -159,6 +159,22 @@ NO CONNECTION WITH CODE ORIGINALLY WRITTEN BY ALEXANDER FREYR LÚÐVÍKSSON.
 
 ---
 
+**Important Notice:**  
+A significant portion of the development of this version of MiniPyEngine was done entirely by Ege Önder.  
+The original work by Alexander Freyr Lúðvíksson was merely a simple game with some bugs, and none of the following features existed:  
+
+- Main menu  
+- GUI  
+- Developer console  
+- Module verification system  
+- Multi-language support  
+- Functional free mouse look — in fact, even this was broken  
+
+This notice is added to clarify that all of these features, fixes, and enhancements in the current version were implemented by Ege Önder.  
+It is included solely to protect the author's rights and acknowledge the scope of contributions.
+
+---
+
 ## Contributors:
 - @OwnderDuck
 
