@@ -34,7 +34,7 @@
 
 ## Known Bugs
 
-- None reported.
+- On AMD GPUs, textures turn black and the walls render incorrectly, as if they’re spinning or warped, but everything works properly on NVIDIA GPUs.
 
 ---
 
