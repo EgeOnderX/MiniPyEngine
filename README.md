@@ -23,7 +23,7 @@
 
 - Added **Game Maker App** Button, **NOT** the app ( Comes in v1.0.3 )
 - Multiplayer removed  (But still it needs shortuuid)
-- Added support for **8K**  for fun, added **16K** resolution!
+- Added support for **8K** and **16K** resolution!
 - Fixed crouch-jump bug  
 - Various bug fixes and internal improvements  
 - VGA and SVGA resolution support removed for stability
@@ -99,6 +99,8 @@
 
 MiniPyEngine uses **modern OpenGL** with custom GLSL shaders for advanced graphics, going beyond the fixed-function pipeline.  
 Shaders are compiled at runtime from the `shaders/` directory.
+16K resolution: I don't know how it works on an RTX 4090, but it runs without any problems.
+You can change the resolution from the config file (without extension). Note: NEVER set the resolution below VGA — it causes weird behavior.
 
 To create your own game:
 
