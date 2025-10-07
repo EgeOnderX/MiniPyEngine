@@ -3,11 +3,13 @@
 
 # MiniPyEngine 1.0.1-S language pach
 
-
+Font Update Notice:
+In this version, Microsoft fonts (Arial and SimHei) have been removed to avoid copyright issues.
+We apologize for any inconvenience and appreciate your understanding.
 ---
 
 ## Features
-
+- 4 language support in GUI.
 - Uses `.obj` and `.mtl` files for models and textures. (Does **not** support `.glb` format.)
 - Supports a wide range of resolutions:
   - HD (`1280×720`)
