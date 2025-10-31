@@ -128,8 +128,7 @@ To create your own game:
 
 MIT License
 
-Copyright (c) 2023 Alexander Freyr Lúðvíksson  
-Modified into MiniPyEngine by Ege Önder, 2025  
+Copyright (c) Ege Önder
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -149,31 +148,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-ADDITIONAL NOTICE:  
-THIS SOFTWARE MAY INCLUDE MODIFIED CODE ORIGINALLY WRITTEN BY ALEXANDER FREYR LÚÐVÍKSSON.  
-HOWEVER, SIGNIFICANT PARTS OF MINIPYENGINE WERE WRITTEN ENTIRELY FROM SCRATCH  
-BY EGE ÖNDER. IT IS INCORRECT TO ASSUME THAT ALL OF THE CODE BELONGS TO  
-ALEXANDER FREYR LÚÐVÍKSSON. PLEASE REFER TO THE README FILE FOR FURTHER DETAILS.  
-
-ANY CODE AND/OR SEGMENT WRITTEN BY EGE ÖNDER IS DISTRIBUTED UNDER THE MIT  
-LICENSE IN THE NAME OF EGE ÖNDER. SUCH CODE SEGMENTS ARE INDEPENDENT AND HAVE  
-NO CONNECTION WITH CODE ORIGINALLY WRITTEN BY ALEXANDER FREYR LÚÐVÍKSSON.
-
----
-
-**Important Notice:**  
-A significant portion of the development of this version of MiniPyEngine was done entirely by Ege Önder.  
-The original work by Alexander Freyr Lúðvíksson was merely a simple game with some bugs, and none of the following features existed:  
-
-- Main menu  
-- GUI  
-- Developer console  
-- Module verification system  
-- Multi-language support  
-- Functional free mouse look — in fact, even this was broken  
-
-This notice is added to clarify that all of these features, fixes, and enhancements in the current version were implemented by Ege Önder.  
-It is included solely to protect the author's rights and acknowledge the scope of contributions.
 
 ---
 
