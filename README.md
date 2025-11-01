@@ -108,8 +108,12 @@ It supports up to **16K resolution** — tested to run stably even on RTX 4090.
 Resolution can be adjusted in the `config` file.  
 ⚠️ **Warning:** Never set the resolution below QVGA, as it may cause unpredictable behavior.
 
-To create your own game:
+---
+
+##To create your own game:
+
 - Edit `maps/default.mpf`
+*(Note: You can use the GMMKR GUI. To open it: run main.py and click Game Maker)*
 *(Note: The current sound system includes only sample sounds.)*
 
 ---
