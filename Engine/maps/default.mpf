@@ -1,0 +1,27 @@
+# MiniPyEngine detailed demo map
+# Built for dynamic object + texture variety test (scaled down crates)
+
+# === WALLS ===
+object: TexturedCube, 0,0.2,10, 0,0,0, 20,1.5,0.1, textures/longwall.png
+object: TexturedCube, 0,0.2,-10, 0,0,0, 20,1.5,0.1, textures/longwall.png
+object: TexturedCube, 10,0.2,0, 0,0,0, 0.1,1.5,20, textures/longwall2.png
+object: TexturedCube, -10,0.2,0, 0,0,0, 0.1,1.5,20, textures/longwall2.png
+
+# === CENTER DECOR ===
+object: Crate, 0,-0.45,0, 0,45,0, 0.18,0.18,0.18
+object: Crate, 0,-0.15,0, 0,0,0, 0.18,0.18,0.18
+object: Crate, 0,0.15,0, 0,90,0, 0.18,0.18,0.18
+
+# === MIXED CRATES AREA (left) ===
+object: Crate, -5,-0.45,3, 0,0,0, 0.15,0.15,0.15, textures/crate.png
+object: Crate, -4.5,-0.15,2.75, 0,30,0, 0.12,0.12,0.12, textures/crate.png
+
+# === STACKED CRATES (right) ===
+object: Crate, 6,-0.45,-3, 0,0,0, 0.18,0.18,0.18, textures/crate.png
+
+# === WEAPON ===
+object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
+
+# === DECOR WALL VARIATION ===
+#object: TexturedCube, 0,1.5,-5, 0,0,0, 8,0.3,0.1, textures/longwall2.png
+#object: TexturedCube, 0,1.8,-5, 0,0,0, 7,0.1,0.1, textures/longwall.png
