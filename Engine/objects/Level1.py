@@ -11,9 +11,6 @@ import sys, os
 
 
 class Level1(GameObject):
-    """
-    The Level1 gameobject — artık maps/default.mpf dosyasını yorumlayarak oluşturur.
-    """
     def __init__(self, shader, position=Point(0, 0, 0), rotation=Vector(0, 0, 0), scale=Vector(0, 0, 0), material=Material(), visible=True):
         super().__init__(shader, position, rotation, scale, material, visible)
         self.cubes = []
