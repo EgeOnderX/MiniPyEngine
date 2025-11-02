@@ -12,7 +12,11 @@
 
 ## Features
 
-- Uses `.obj` and `.mtl` files for models and textures.  
+
+- Auto-assigned AABB collision and gravity system for every object.
+- Designed for FPS (first-person shooter) games.
+- Free-look mause.
+- - Uses `.obj` and `.mtl` files for models and textures.  
   *(Note: `.glb` format is not supported.)*
 - Supports a wide range of resolutions:
   - HD (1280×720)
@@ -36,6 +40,11 @@
 
 ---
 
+## Project Structure
+
+
+
+---
 ## Known Bugs
 
 - On **AMD GPUs**, textures may turn black and walls can appear distorted or spinning.  
