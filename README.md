@@ -17,7 +17,7 @@
 - Designed for FPS (first-person shooter) games.
 - Free-look mause.
 - Built with 33 Python files, totaling only 6.36 MB (6,672,871 bytes).
-- - Uses `.obj` and `.mtl` files for models and textures.  
+- Uses `.obj` and `.mtl` files for models and textures.  
   *(Note: `.glb` format is not supported.)*
 - Supports a wide range of resolutions:
   - HD (1280×720)
@@ -113,7 +113,7 @@ Resolution can be adjusted in the `config` file.
 
 ---
 
-##To create your own game:
+## To create your own game:
 
 - Edit `maps/default.mpf`
 *(Note: You can use the GMMKR GUI. To open it: run main.py and click Game Maker)*
@@ -199,6 +199,7 @@ object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
 
 ## Project Structure:
 
+```File Tree
 ───Engine
     │   about
     │   config
@@ -329,6 +330,8 @@ object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
             console.cpython-313.pyc
             CONSTANTS.cpython-313.pyc
             modulechk.cpython-313.pyc
+```
+
 ---
 
 ## Contributors:
