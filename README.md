@@ -16,6 +16,7 @@
 - Auto-assigned AABB collision and gravity system for every object.
 - Designed for FPS (first-person shooter) games.
 - Free-look mause.
+- Built with 33 Python files, totaling only 6.36 MB (6,672,871 bytes).
 - - Uses `.obj` and `.mtl` files for models and textures.  
   *(Note: `.glb` format is not supported.)*
 - Supports a wide range of resolutions:
@@ -40,11 +41,6 @@
 
 ---
 
-## Project Structure
-
-
-
----
 ## Known Bugs
 
 - On **AMD GPUs**, textures may turn black and walls can appear distorted or spinning.  
@@ -91,9 +87,7 @@
 
 ---
 
-## System Requirements
-
-### Minimum
+## Minimum System Requirements
 
 - **OS:** Windows 10 / Linux (Ubuntu 18.04+)  
 - **Python:** 3.8+  
@@ -203,6 +197,138 @@ object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
 
 ---
 
+## Project Structure:
+
+───Engine
+    │   about
+    │   config
+    │   console.py
+    │   CONSTANTS.py
+    │   GMMKR.py
+    │   main.py
+    │   modulechk.py
+    │   StartGame.py
+    │
+    ├───maps
+    │       default.mpf
+    │
+    ├───maths
+    │   │   Color.py
+    │   │   Lights.py
+    │   │   Material.py
+    │   │   Matricies.py
+    │   │   Point.py
+    │   │   Vector.py
+    │   │
+    │   └───__pycache__
+    │           Color.cpython-313.pyc
+    │           Lights.cpython-313.pyc
+    │           Material.cpython-313.pyc
+    │           Matricies.cpython-313.pyc
+    │           Point.cpython-313.pyc
+    │           Vector.cpython-313.pyc
+    │
+    ├───misc
+    │   │   Config.py
+    │   │
+    │   └───__pycache__
+    │           Config.cpython-313.pyc
+    │
+    ├───models
+    │       bean.mtl
+    │       bean.obj
+    │       crate.mtl
+    │       crate.obj
+    │       Gun.mtl
+    │       Gun.obj
+    │
+    ├───objects
+    │   │   Bullet.py
+    │   │   Camera.py
+    │   │   Crate.py
+    │   │   Enemy.py
+    │   │   Floor.py
+    │   │   GameObjectBase.py
+    │   │   GameObjects.py
+    │   │   Gun.py
+    │   │   Level1.py
+    │   │   Player.py
+    │   │   SimpleCube.py
+    │   │   TexturedCube.py
+    │   │   __init__.py
+    │   │
+    │   ├───meshes
+    │   │   │   MeshModel.py
+    │   │   │   ObjLoader.py
+    │   │   │
+    │   │   ├───models
+    │   │   │       bean.mtl
+    │   │   │       bean.obj
+    │   │   │       crate.mtl
+    │   │   │       crate.obj
+    │   │   │       crowbar.obj
+    │   │   │       Gun.mtl
+    │   │   │       Gun.obj
+    │   │   │
+    │   │   └───__pycache__
+    │   │           MeshModel.cpython-313.pyc
+    │   │           ObjLoader.cpython-313.pyc
+    │   │
+    │   ├───primatives
+    │   │   │   Crosshair.py
+    │   │   │   CubePrimative.py
+    │   │   │   SpherePrimative.py
+    │   │   │
+    │   │   └───__pycache__
+    │   │           Crosshair.cpython-313.pyc
+    │   │           CubePrimative.cpython-313.pyc
+    │   │           SpherePrimative.cpython-313.pyc
+    │   │
+    │   └───__pycache__
+    │           Bullet.cpython-313.pyc
+    │           Camera.cpython-313.pyc
+    │           Crate.cpython-313.pyc
+    │           Floor.cpython-313.pyc
+    │           GameObjectBase.cpython-313.pyc
+    │           GameObjects.cpython-313.pyc
+    │           Gun.cpython-313.pyc
+    │           Level1.cpython-313.pyc
+    │           Player.cpython-313.pyc
+    │           SimpleCube.cpython-313.pyc
+    │           TexturedCube.cpython-313.pyc
+    │           __init__.cpython-313.pyc
+    │
+    ├───shaders
+    │   │   crosshair.frag
+    │   │   Crosshair.py
+    │   │   Shaders.py
+    │   │   simple3D.frag
+    │   │   simple3D.vert
+    │   │
+    │   └───__pycache__
+    │           Crosshair.cpython-313.pyc
+    │           Shaders.cpython-313.pyc
+    │
+    ├───sounds
+    │       buttonmenu.mp3
+    │       damage.mp3
+    │       dead.mp3
+    │       shot.mp3
+    │
+    ├───textures
+    │       Crate.png
+    │       crate1.png
+    │       Gun.png
+    │       longwall.png
+    │       longwall2.png
+    │       main.png
+    │       metal_big_floor-min.png
+    │       metal_floor.png
+    │
+    └───__pycache__
+            console.cpython-313.pyc
+            CONSTANTS.cpython-313.pyc
+            modulechk.cpython-313.pyc
 ---
 
 ## Contributors:
