@@ -107,7 +107,7 @@
 MiniPyEngine uses **modern OpenGL** with **custom GLSL shaders**, avoiding the fixed-function pipeline.  
 Shaders are loaded and compiled at runtime from the `/shaders` directory.  
 
-It supports up to **16K resolution** — tested to run stably even on RTX 4090.  
+It supports up to **16K resolution** — tested to run stably even on RTX 4050.  
 Resolution can be adjusted in the `config` file.  
 ⚠️ **Warning:** Never set the resolution below QVGA, as it may cause unpredictable behavior.
 
