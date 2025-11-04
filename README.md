@@ -67,10 +67,11 @@
 
 1. Run `main.py`.
 2. Click **Settings** to configure resolution and options.
-3. If the game doesn’t start:
+3. In main.py GUI, you will see the following buttons: Game Maker, Start Game, Settings, About, and Exit. Just click the “Start Game” button.
+4. If the game doesn’t start:
    - Open the `config` file with a text editor.
    - Verify that all settings are valid.
-4. Finally, run `StartGame.py` to launch the game.
+5. Finally, run StartGame.py (not the main.py GUI!) — this script launches the game directly.
 
 ---
 
