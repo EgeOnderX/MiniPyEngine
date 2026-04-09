@@ -4,7 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)
 ![OpenGL](https://img.shields.io/badge/OpenGL-3.3%2B-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)
-![Engine](https://img.shields.io/badge/Engine-MiniPyEngine-orange.svg)
 [![Download](https://img.shields.io/badge/Download-ZIP-success.svg)](https://github.com/EgeOnderX/MiniPyEngine/archive/refs/heads/main.zip)
 [![Issues](https://img.shields.io/badge/Report-Issue-critical.svg)](https://github.com/EgeOnderX/MiniPyEngine/issues)
 
