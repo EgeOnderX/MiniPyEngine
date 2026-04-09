@@ -37,7 +37,6 @@
 - Added **.mpf** support
 - Improved **player system**
 - Cleaned and optimized core code
-- Decision: From this version onward, the engine and its license belong **solely to Ege Önder**, as the project is now fully independent from Alexander Frey’s original logic and concept.
 
 ---
 
