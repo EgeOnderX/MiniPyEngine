@@ -1,21 +1,57 @@
-# MiniPyEngine 1.0.2-S
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Version](https://img.shields.io/badge/version-1.0.2--S-green.svg)
+# MiniPyEngine v2.0.0-S
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+![Version](https://img.shields.io/badge/version-2.0.0--S-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)
 ![OpenGL](https://img.shields.io/badge/OpenGL-3.3%2B-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)
 [![Download](https://img.shields.io/badge/Download-ZIP-success.svg)](https://github.com/EgeOnderX/MiniPyEngine/archive/refs/heads/main.zip)
 [![Issues](https://img.shields.io/badge/Report-Issue-critical.svg)](https://github.com/EgeOnderX/MiniPyEngine/issues)
 
+> **Important License & Major Version Update:**
+> The license for MiniPyEngine has officially been changed to **Apache License 2.0** under **Ege Önder**.
+> Due to complete architectural refactoring and massive performance improvements, the version number has jumped directly from **v1.0.2 / v1.0.3-B** to **v2.0.0-S**.
+
 ---
 
-## Features
+## Overview
 
+MiniPyEngine is a modular, lightweight 3D game engine and real-time rendering framework implemented in Python using Pygame and PyOpenGL. Version 2.0.0-S introduces a completely rewritten core pipeline, introducing global VRAM texture caching, optimized OBJ model batch rendering, multi-language localized menu system, and an interactive developer console with real-time variable tweaking.
 
-- Auto-assigned AABB collision and gravity system for every object.
+---
+
+## Architectural Overhaul
+
+The codebase of MiniPyEngine has been **COMPLETELY rewritten from scratch by Ege Önder**. The engine now features a modular 3D pipeline, optimized texture caching, unified vector math (`Vector3`, `Transform`), and multi-language GUI support.
+
+---
+
+## Comparison: v1.0.2-S vs. v2.0.0-S
+
+| Feature / Aspect | Old Version (v1.0.2-S) | New Version (v2.0.0-S) |
+| --- | --- | --- |
+| **Code Architecture** | Legacy structure | Completely rewritten from scratch by Ege Önder |
+| **License** | MIT License | **Apache License 2.0** |
+| **Rendering Modes** | Fixed function only | Dual mode: `fixed_function` & `opengl_shader` |
+| **OBJ Model Loading** | Per-polygon state changes | Batched `GL_TRIANGLES` compilation & display lists |
+| **Texture Management** | Reloaded per instance | Global VRAM texture caching (`TEXTURE_CACHE`) |
+| **GUI & Localization** | Basic single-language GUI | Multi-language menu (English, Turkish, German, Chinese) |
+| **Configuration** | Static setup | Dynamic INI/CFG parser with runtime key rebinding |
+| **HUD & Font System** | Uncached redraws | High-performance OpenGL texture font caching |
+
+---
+
+## Key Features in v2.0.0-S
+
+* **Complete Codebase Re-architecture:** Clean, modular structure (`Engine.py`, `MapLoader.py`, `Main.py`).
+* **Dual Rendering Pipeline:** Support for both legacy fixed-function rendering and programmable OpenGL shaders via configuration.
+* **Optimized OBJ / MTL Importer:** Triangulated batch rendering using OpenGL display lists (`GL_TRIANGLES`) to eliminate frame bottlenecks.
+* **Global Texture Caching:** Efficient VRAM memory management via `TEXTURE_CACHE` avoiding duplicate GPU uploads.
+* **Native Multi-Language Support:** Built-in launcher UI localizations for English (EN), Turkish (TR), German (DT), and Chinese (CN).
+* **Interactive Settings & Keybindings:** Dynamic resolution switcher (up to Ultra-HD presets), VSync toggle, target FPS limits, sensitivity slider, and customizable key binding configuration.
+* **Built-in Console & Cheats:** Integrated developer console supporting `god`, `noclip`, `nojump`, and `nocrouch` commands with smooth animation overlays.
+* * - Auto-assigned AABB collision and gravity system for every object.
 - Designed for FPS (first-person shooter) games.
-- Free-look mause.
-- Built with 33 Python files, totaling only 6.36 MB (6,672,871 bytes).
 - Uses `.obj` and `.mtl` files for models and textures.  
   *(Note: `.glb` format is not supported.)*
 - Supports a wide range of resolutions:
@@ -25,311 +61,201 @@
   - 4K / UHD (3840×2160)
   - 8K (7680×4320)
   - 16K (15360×8640)
+ 
+---
+
+## Repository Structure
+
+```text
+MiniPyEngine/
+│   About
+│   Config.cfg
+│   Engine.py
+│   GameMaker.py
+│   Main.py
+│   MapLoader.py
+│
+├───Maps
+│       default.mpf
+│
+├───Maths
+│       Collision.py
+│       Light.py
+│       Physics.py
+│
+├───Objects
+│   ├───Ammo
+│   │   │   Ammo.jpg
+│   │   │   Ammo.mtl
+│   │   │   Ammo.obj
+│   │   │   Ammo.py
+│   │   │
+│   │   └───__pycache__
+│   │           Ammo.cpython-311.pyc
+│   │
+│   ├───Crate
+│   │   │   Crate.mtl
+│   │   │   Crate.obj
+│   │   │   Crate.png
+│   │   │   Crate.py
+│   │   │   crate1.png
+│   │   │
+│   │   └───__pycache__
+│   │           Crate.cpython-311.pyc
+│   │
+│   ├───Cube
+│   │   │   cube.py
+│   │   │
+│   │   └───__pycache__
+│   │           cube.cpython-311.pyc
+│   │
+│   ├───Default
+│   │   │   Player.py
+│   │   │
+│   │   └───Bullet
+│   │       │   Bullet.jpg
+│   │       │   Bullet.mtl
+│   │       │   Bullet.obj
+│   │       │   Bullet.py
+│   │       │
+│   │       └───__pycache__
+│   │               Bullet.cpython-311.pyc
+│   │
+│   ├───Floor
+│   │   │   Floor.png
+│   │   │   Floor.py
+│   │   │
+│   │   └───__pycache__
+│   │           Floor.cpython-311.pyc
+│   │
+│   ├───Gun
+│   │   │   Gun.mtl
+│   │   │   Gun.obj
+│   │   │   Gun.png
+│   │   │   Gun.py
+│   │   │
+│   │   └───__pycache__
+│   │           Gun.cpython-311.pyc
+│   │
+│   ├───TexturedCube
+│   │   │   TexturedCube.py
+│   │   │
+│   │   └───__pycache__
+│   │           TexturedCube.cpython-311.pyc
+│   │
+│   └───Walls
+│       │   longwall.png
+│       │   longwall2.png
+│       │   Walls.py
+│       │
+│       └───__pycache__
+│               Walls.cpython-311.pyc
+│
+├───Shaders
+├───Sounds
+│       Damage.mp3
+│       Dead.mp3
+│       Menu.mp3
+│       Shot.mp3
+│
+└───Textures
+    └───Main
+            Main.png
+
+```
 
 ---
 
-## What's New in MiniPyEngine 1.0.2-S
+## Requirements & Installation
 
-- Added **Game Maker App**
-- Fixed **crouch** bug
-- Fixed **collision** bug
-- Added **.mpf** support
-- Improved **player system**
-- Cleaned and optimized core code
-
----
-
-## Known Bugs
-
-- On **AMD GPUs**, textures may turn black and walls can appear distorted or spinning.  
-  *(Everything works correctly on NVIDIA GPUs.)*
-
----
-
-## Default Controls (`Player.py`)
-
-| Action | Key |
-|:-------|:----|
-| Move | W, A, S, D |
-| Run | Hold `Shift` |
-| Jump | `Space` |
-| Crouch | `Ctrl` |
-| Look Around | Move the mouse |
-| Shoot / Interact | Left-click |
-| Pause Menu | `Esc` |
-| Open Console | `F3` |
-
----
-
-## How to Launch
-
-1. Run `main.py`.
-2. Click **Settings** to configure resolution and options.
-3. In main.py GUI, you will see the following buttons: Game Maker, Start Game, Settings, About, and Exit. Just click the “Start Game” button.
-4. If the game doesn’t start:
-   - Open the `config` file with a text editor.
-   - Verify that all settings are valid.
-5. Finally, run StartGame.py (not the main.py GUI!) — this script launches the game directly.
-
----
-
-## Screenshots
-
-### Main Menu
-<img width="1919" height="929" alt="main" src="https://github.com/user-attachments/assets/8948a77d-fa41-483a-8725-4326b7e846bf" />
-
-### Console Menu
-<img width="845" height="582" alt="console" src="https://github.com/user-attachments/assets/f1d4bf1a-04ab-419e-8f93-15a3238a2c33" />
-
-### Module Verification System
-<img width="661" height="252" alt="modulechk" src="https://github.com/user-attachments/assets/a1885e07-20fa-4224-b8fa-ffa2f21b89ec" />
-
----
-
-## Minimum System Requirements
+### Minimum System Requirements
 
 - **OS:** Windows 10 / Linux (Ubuntu 18.04+)  
 - **Python:** 3.8+  
 - **CPU:** Dual-core 2.0 GHz  
 - **RAM:** 80 MB (in-game usage)  
 - **GPU:** Integrated GPU with OpenGL 3.3 support  
-- **Storage:** 20 MB free  
+- **Storage:** 50 MB free  
 - **Dependencies:**  
-  `pygame`, `PyOpenGL`, `numpy`, `shortuuid`, `psutil`
+  `pygame`, `PyOpenGL`, `numpy`
 
-> **Note:** Even though `shortuuid` was originally for multiplayer, it’s still required internally to prevent data corruption.
+### Setup Instructions
 
----
+1. Clone or download the repository:
+```bash
+git clone https://github.com/EgeOnderX/MiniPyEngine.git
+cd MiniPyEngine
 
-## Technical Overview
-
-MiniPyEngine uses **modern OpenGL** with **custom GLSL shaders**, avoiding the fixed-function pipeline.  
-Shaders are loaded and compiled at runtime from the `/shaders` directory.  
-
-It supports up to **16K resolution** — tested to run stably even on RTX 4050.  
-Resolution can be adjusted in the `config` file.  
-⚠️ **Warning:** Never set the resolution below QVGA, as it may cause unpredictable behavior.
-
----
-
-## To create your own game:
-
-- Edit `maps/default.mpf`
-*(Note: You can use the GMMKR GUI. To open it: run main.py and click Game Maker)*
-*(Note: The current sound system includes only sample sounds.)*
-
----
-
-
-## What is “.mpf”?
-
-**MiniPyEngine Map File** — a simple, human-readable map format used to define level geometry, object placement, and textures.
-
-Each line represents an **object instance** with position, rotation, and scale data, along with optional texture or color information.
-
-### Syntax Overview
-
-- Each non-empty line is parsed from top to bottom.  
-- Lines starting with `#` are treated as **comments** (ignored by the parser).  
-- Each object line must start with:  
-  `object: Type, px,py,pz, rx,ry,rz, sx,sy,sz, [extra...]`  
-- where:  
-  - `Type` → object class name (`TexturedCube`, `Crate`, `Gun`, etc.)  
-  - `px,py,pz` → position (X, Y, Z)  
-  - `rx,ry,rz` → rotation (X, Y, Z)  
-  - `sx,sy,sz` → scale (X, Y, Z)  
-  - `[extra...]` → optional fields (e.g. texture path, color, shininess)
-
-### Notes
-
-- Any line beginning with `#` is skipped by the loader — use this for comments or deactivated objects.  
-- Optional texture paths (like `textures/crate.png`) are automatically resolved from the project root.  
-- The parser automatically identifies the object type and spawns the corresponding Python class (e.g., `TexturedCube`, `Crate`, `Gun`).  
-- Missing or invalid object types are logged with `[INFO] Unknown object type`.
-
----
-
-### Example (Default Demo Map)
-
-```Minipyengine Map File (.MPF)
-# MiniPyEngine detailed demo map (default)
-# Built for dynamic object + texture variety test (scaled down crates)
-
-# === WALLS ===
-object: TexturedCube, 0,0.2,10, 0,0,0, 20,1.5,0.1, textures/longwall.png
-object: TexturedCube, 0,0.2,-10, 0,0,0, 20,1.5,0.1, textures/longwall.png
-object: TexturedCube, 10,0.2,0, 0,0,0, 0.1,1.5,20, textures/longwall2.png
-object: TexturedCube, -10,0.2,0, 0,0,0, 0.1,1.5,20, textures/longwall2.png
-
-# === CENTER DECOR ===
-object: Crate, 0,-0.45,0, 0,45,0, 0.18,0.18,0.18
-object: Crate, 0,-0.15,0, 0,0,0, 0.18,0.18,0.18
-object: Crate, 0,0.15,0, 0,90,0, 0.18,0.18,0.18
-
-# === MIXED CRATES AREA (left) ===
-object: Crate, -5,-0.45,3, 0,0,0, 0.15,0.15,0.15, textures/crate.png
-object: Crate, -4.5,-0.15,2.75, 0,30,0, 0.12,0.12,0.12, textures/crate.png
-
-# === STACKED CRATES (right) ===
-object: Crate, 6,-0.45,-3, 0,0,0, 0.18,0.18,0.18, textures/crate.png
-
-# === WEAPON ===
-object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
-
-# === DECOR WALL VARIATION ===
-#object: TexturedCube, 0,1.5,-5, 0,0,0, 8,0.3,0.1, textures/longwall2.png
-#object: TexturedCube, 0,1.8,-5, 0,0,0, 7,0.1,0.1, textures/longwall.png
 ```
+
+
+2. Run the launcher:
+```bash
+python Main.py
+
+```
+
+
+---
+
+## Map File Format (.mpf) & Usage
+
+MiniPyEngine uses `.mpf` (MiniPyEngine Map File) to construct level geometry dynamically at runtime.
+
+### Line Format Parameters
+
+* **ObjectType:** Name registered in `MapLoader.py` (`TexturedCube`, `Crate`, `Ammo`, `Gun`, `Floor`, `Walls`, `Cube`).
+* **Position:** X, Y, Z coordinates in world space.
+* **Rotation:** Rotation angles in degrees along X, Y, Z axes.
+* **Scale:** Scale multipliers along X, Y, Z axes.
+* **Texture Path (Optional):** Path to custom image texture.
+
+### Example `.mpf` Map File
+
+```text
+# === MiniPyEngine Map Example ===
+object: Floor, 0,0,0, 0,0,0, 100,1,100
+object: Walls, 0,5,-50, 0,0,0, 100,10,1
+object: Walls, 0,5,50, 0,0,0, 100,10,1
+object: Walls, -50,5,0, 0,0,0, 1,10,100
+object: Walls, 50,5,0, 0,0,0, 1,10,100
+object: Crate, 0,0.4,0, 0,45,0, 0.8,0.8,0.8
+object: Crate, 3,0.4,2, 0,20,0, 0.8,0.8,0.8
+object: Crate, -4,0.4,-2, 0,90,0, 0.8,0.8,0.8
+object: Ammo, 2,0.1,3, 0,0,0, 0.2,0.2,0.2
+object: Ammo, 2.5,0.1,3.2, 0,15,0, 0.2,0.2,0.2
+object: Gun, 5,0.5,0, 0,0,0, 1,1,1
+
+```
+
+---
+
+## Default Controls
+
+| Action | Key / Input |
+| --- | --- |
+| Move Forward / Backward | W / S |
+| Strafe Left / Right | A / D |
+| Run | Hold Left Shift |
+| Jump | Space |
+| Crouch | Left Control |
+| Shoot | Left Mouse Button |
+| Weapon Selection | Numbers 1–4 / Mouse Wheel |
+| Open Console | F3 |
+| Pause Menu | Esc |
+
+---
 
 ## Console Commands
 
-| Command | Description |
-|:--------|:-------------|
-| `god` | Enables God Mode (health = 9999) |
-| `noclip` | Walk through walls |
-| `nocrouch` | Toggle crouching |
-| `nojump` | Toggle jumping |
-| `exit` | Close console |
+Press `F3` in-game to toggle the console:
 
-> **Pro Tip:** You can auto-execute commands by adding  
-> `console("command")` inside the config file.
-
----
-
-## Project Structure:
-
-```File Tree
-───Engine
-    │   about
-    │   config
-    │   console.py
-    │   CONSTANTS.py
-    │   GMMKR.py
-    │   main.py
-    │   modulechk.py
-    │   StartGame.py
-    │
-    ├───maps
-    │       default.mpf
-    │
-    ├───maths
-    │   │   Color.py
-    │   │   Lights.py
-    │   │   Material.py
-    │   │   Matricies.py
-    │   │   Point.py
-    │   │   Vector.py
-    │   │
-    │   └───__pycache__
-    │           Color.cpython-313.pyc
-    │           Lights.cpython-313.pyc
-    │           Material.cpython-313.pyc
-    │           Matricies.cpython-313.pyc
-    │           Point.cpython-313.pyc
-    │           Vector.cpython-313.pyc
-    │
-    ├───misc
-    │   │   Config.py
-    │   │
-    │   └───__pycache__
-    │           Config.cpython-313.pyc
-    │
-    ├───models
-    │       bean.mtl
-    │       bean.obj
-    │       crate.mtl
-    │       crate.obj
-    │       Gun.mtl
-    │       Gun.obj
-    │
-    ├───objects
-    │   │   Bullet.py
-    │   │   Camera.py
-    │   │   Crate.py
-    │   │   Enemy.py
-    │   │   Floor.py
-    │   │   GameObjectBase.py
-    │   │   GameObjects.py
-    │   │   Gun.py
-    │   │   Level1.py
-    │   │   Player.py
-    │   │   SimpleCube.py
-    │   │   TexturedCube.py
-    │   │   __init__.py
-    │   │
-    │   ├───meshes
-    │   │   │   MeshModel.py
-    │   │   │   ObjLoader.py
-    │   │   │
-    │   │   ├───models
-    │   │   │       bean.mtl
-    │   │   │       bean.obj
-    │   │   │       crate.mtl
-    │   │   │       crate.obj
-    │   │   │       crowbar.obj
-    │   │   │       Gun.mtl
-    │   │   │       Gun.obj
-    │   │   │
-    │   │   └───__pycache__
-    │   │           MeshModel.cpython-313.pyc
-    │   │           ObjLoader.cpython-313.pyc
-    │   │
-    │   ├───primatives
-    │   │   │   Crosshair.py
-    │   │   │   CubePrimative.py
-    │   │   │   SpherePrimative.py
-    │   │   │
-    │   │   └───__pycache__
-    │   │           Crosshair.cpython-313.pyc
-    │   │           CubePrimative.cpython-313.pyc
-    │   │           SpherePrimative.cpython-313.pyc
-    │   │
-    │   └───__pycache__
-    │           Bullet.cpython-313.pyc
-    │           Camera.cpython-313.pyc
-    │           Crate.cpython-313.pyc
-    │           Floor.cpython-313.pyc
-    │           GameObjectBase.cpython-313.pyc
-    │           GameObjects.cpython-313.pyc
-    │           Gun.cpython-313.pyc
-    │           Level1.cpython-313.pyc
-    │           Player.cpython-313.pyc
-    │           SimpleCube.cpython-313.pyc
-    │           TexturedCube.cpython-313.pyc
-    │           __init__.cpython-313.pyc
-    │
-    ├───shaders
-    │   │   crosshair.frag
-    │   │   Crosshair.py
-    │   │   Shaders.py
-    │   │   simple3D.frag
-    │   │   simple3D.vert
-    │   │
-    │   └───__pycache__
-    │           Crosshair.cpython-313.pyc
-    │           Shaders.cpython-313.pyc
-    │
-    ├───sounds
-    │       buttonmenu.mp3
-    │       damage.mp3
-    │       dead.mp3
-    │       shot.mp3
-    │
-    ├───textures
-    │       Crate.png
-    │       crate1.png
-    │       Gun.png
-    │       longwall.png
-    │       longwall2.png
-    │       main.png
-    │       metal_big_floor-min.png
-    │       metal_floor.png
-    │
-    └───__pycache__
-            console.cpython-313.pyc
-            CONSTANTS.cpython-313.pyc
-            modulechk.cpython-313.pyc
-```
+* `god`: Toggle God Mode (invincibility).
+* `noclip`: Pass through physical collisions.
+* `nojump`: Disable jump mechanics.
+* `nocrouch`: Disable crouching mechanics.
+* `clear`: Clear console history buffer.
+* `help`: Display list of available console commands.
 
 ---
 
@@ -337,6 +263,16 @@ object: Gun, 2,0,1, 0,0,0, 0.2,0.2,0.2, textures/gun.png
 - @OwnderDuck
 
 ---
+
+
+## License
+
+Distributed under the **Apache License 2.0**. See `LICENSE` for more information.
+
+Copyright 2025 Ege Önder.
+
+---
+
 ## Planned Features for Future Versions
 
 - Better performance and optimizations  
